@@ -12,14 +12,27 @@
 
 <body>
     <main>
+        <div class="image send">
+            <img src="/static/img/send.svg">
+        </div>
+
         <div class="title_block">
-            <h1>Hello! This is the control center for your LED!</h1>
+            <h1>Hello! This is the control center for your LED!</h1><br>
             <h3>What do you want your LED to do?</h3>
         </div>
-        <div >
-            <input type="radio" id="on_opt" name="light_cmd" value="On">On</input> 
-            <input type="radio" id="blink_opt" name="light_cmd" value="Blink">Blink</input> 
-            <input type="radio" id="off_opt" name="light_cmd" value="Off">Off</input>
+
+        <div class="option_block">
+            <form action="/received" method="post">
+                <input class="radio_buttons" type="radio" id="on_opt" name="light_cmd" value="On">On</input> 
+                <input class="radio_buttons" type="radio" id="blink_opt" name="light_cmd" value="Blink">Blink</input> 
+                <input class="radio_buttons" type="radio" id="off_opt" name="light_cmd" value="Off" checked="checked">Off</input>
+                <input type="submit" value="Send">
+                <a href="/about">About Page</href>
+            </form>
+        </div>
+
+        <div class="image received">
+            <img src="/static/img/received.svg">
         </div>
     </main>
 </body>

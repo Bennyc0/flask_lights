@@ -1,0 +1,87 @@
+html {
+    height: 95%;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #f6f2ea;
+    height: 95%;
+}
+
+.title_block {
+    display: flex;
+    align-items: flex-start;
+}
+a {
+    color: #6b63ff;
+}
+
+.option_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0px 5px 5px rgba(162, 161, 161, 0.486);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.radio_buttons {
+    align-items: center;
+}
+
+input {
+    font-family: 'Cabin', sans-serif;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #6b63ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #4742aa;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 80%;
+    padding: 50px;
+}
+
+.image.send {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.image img {
+    width: 300px;
+    height: auto;
+}
+
+.image.received {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
